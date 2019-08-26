@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhSoNgay</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="num">
+        <button type="button" onclick="tinhSoNgay()">Tính Số Ngày</button>
+        <p id="Result"></p>
+    </div>
+    <script>
+        function tinhSoNgay() {
+            let date = document.getElementById("num").value;
+            switch (true) {
+                case (date == 1):
+                    document.getElementById("Result").innerHTML = "Tháng 1 có 31 ngày";
+                    break;
+
+                case (date == 2):
+                    document.getElementById("Result").innerHTML = "Tháng 2 có 28 hoặc 29 ngày";
+
+            }
+        }
+    </script>
+</body>
+</html>
